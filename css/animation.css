@@ -1,0 +1,39 @@
+@keyframes jobs {
+    0%{content: "I'm";} 
+    3.5%{content: "I'm L";} 
+    7%{content: "I'm LA";} 
+    10%{content: "I'm LAR";} 
+    13.5%{content: "I'm LARR";} 
+    17%{content: "I'm LARRY";} 
+    20%{content: "I'm LARRY";} 
+    23%{content: "I'm LARRY D";}
+    26%{content: "I'm LARRY Da";} 
+    29%{content: "I'm LARRY Dan";}
+    32%{content: "I'm LARRY Dani";} 
+    35%{content: "I'm LARRY Danie";} 
+    38%{content: "I'm LARRY Daniel";} 
+    41%{content: "I'm LARRY Daniels|";}
+    43%{content: "I'm D";}
+    46%{content: "I'm De";}
+    49%{content: "I'm Dev";}
+    52%{content: "I'm Deve";}
+    55%{content: "I'm Devel";}
+    59%{content: "I'm Develo";}
+    62%{content: "I'm Develop";} 
+    65%{content: "I'm Develope";} 
+    68%{content: "I'm Developer";} 
+    72%{content: "I'm Developer|";}
+    76%{content: "I'm D";} 
+    79%{content: "I'm De";}
+    82%{content: "I'm Des";}
+    85%{content: "I'm Desi";}    
+    88%{content: "I'm Desig";}
+    91%{content: "I'm Design";}
+    94%{content: "I'm Designe";}
+    97%{content: "I'm Designer";}
+    100%{content: "I'm Designer|";}
+    
+    
+ }
+
+ /* Larry Daniels|   Developer|  Designer| */

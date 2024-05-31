@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* general style */
+:root {
+    --main-color: #212529;
+    --bg-color:  #f7f7f7;
+    --bg-special: #f8f9fa;
+    --text-white: #ffffff;
+    --text-color:#748182;
+    --bg-bar:#1c1c1c;
+    --secondary-color:#343434;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* end general style */
+
+/* Start Navbar */
+.navbar {
+    background-color: var(--bg-special);
+}
+
+#navBar .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+
+#navBar .nav-item {
+    cursor: pointer;
+}
+
+#navBar .nav-item:hover .nav-link::before {
+    width: 12%;
+    margin-left: 0;
+}
+
+@media (min-width:768px) {
+    #navBar .nav-item:hover .nav-link::before {
+        width: 7%;
+        margin-left: 5px;
+    }
+}
+
+@media (min-width:992px) {
+    #navBar .nav-item:hover .nav-link::before {
+        width: 80%;
+        margin-left: 5px;
+    }
+}
+
+
+
+
+/* End Navbar */
+
+/* Start Header */
+header {
+    background-image: linear-gradient(to bottom, #000000bb, #000000bb), url("../images/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    height: calc(100vh - 72px);
+}
+
+#header_section h3::after {
+    content: "";
+    animation: jobs 6s infinite;
+    text-wrap: nowrap;
+    font-weight: 300;
+}
+
+#header_section h2 {
+    font-size: 50px;
+}
+
+
+/* End Header */
+
+
+/* Star About Section */
+.progress {
+    height: 30px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 2.15) inset;
+}
+
+.progress div {
+    background-color: var(--bg-bar);
+    color: var(--text-color);
+}
+
+#about h3 {
+    color: #999;
+}
+
+.download_btn,
+.contact_btn {
+    transition: all 0.2s;
+}
+
+.download_btn:hover {
+    background-color: var(--text-white) !important;
+    color: var(--main-color) !important;
+    border: solid 1px var(--main-color);
+}
+
+.contact_btn:hover {
+    color: var(--text-white) !important;
+    background-color: var(--main-color) !important;
+}
+
+/* End About Section */
+
+/* Start Services Section */
+#services_section {
+    background-color: var(--bg-special);
+}
+
+#services_section h2::after,
+#portfolio_section h2::after,
+#contact h2::after,
+#testimonials_section h2::after,
+#team h2::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 13%;
+    border-bottom: 5px dotted var(--main-color);
+}
+
+.icon-bg {
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-special);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.inner:hover .icon-bg {
+    background-color: var(--main-color);
+}
+
+.inner:hover .icon-bg .icon {
+    transition: all 0.5s;
+}
+
+.inner:hover .icon-bg .icon {
+    color: var(--text-white);
+}
+
+/* End Services Section */
+
+/* Start Portfolio */
+.portfolio_layer {
+    left: 5px;
+    right: 5px;
+    top: 25px;
+    bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.608);
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.portfolio_icons li {
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+}
+
+ #portfolio_section .nav-tabs .nav-item .nav-link {
+    color: var(--secondary-color) !important;
+}
+
+#portfolio_section .nav-tabs .nav-item .nav-link.active {
+    color: var(--main-color) !important;
+}
+#portfolio_section .inner:hover .portfolio_layer {
+    top: 5px;
+    opacity: 1;
+}
+
+/* End Portfolio */
+
+/* Start Testmonials */
+
+.testmonial_img {
+    width: 100px;
+}
+
+#testimonials_section .indicators {
+    width: 15px;
+    height: 15px;
+}
+
+/* End Testmonials */
+
+/* Start Counter */
+#counter {
+    background-color: var(--bg-special);
+}
+
+/* End Counter */
+
+/* Start Teams */
+#team .teams_icons ul li {
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+#team .teams_icons ul li .teams-icon {
+    color: var(--text-white);
+    transition: all 0.5s;
+}
+
+
+#team .img_layer {
+    transition: all 0.5s;
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    opacity: 0;
+
+}
+
+
+#team .img:hover .img_layer {
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+
+#team .img .img_layer .teams_icons ul li:hover {
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+
+#team .img .img_layer .teams_icons ul li:hover .teams-icon {
+    color: var(--main-color) !important;
+}
+
+#team .team_inner .img img {
+    transition: all 0.5s;
+}
+
+#team .team_inner:hover .img img {
+    transform: scale(1.1);
+}
+
+/* End Teams */
+
+/* Start Contacts */
+#contact {
+    background-color: var(--bg-special);
+
+}
+
+.contacts_icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--text-white);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.contacts_icon .icons {
+    color: var(--main-color);
+    transition: all 0.5s;
+}
+
+.contacts_inner:hover  .contacts_icon {
+    background-color: var(--main-color);
+}
+
+.contacts_inner:hover  .contacts_icon .icons {
+    color: var(--text-white);
+}
+
+textarea{
+    resize: none;
+}
+/* End Contacts */
+
+/* start footer */
+.footer-content {
+    background-color:var(--bg-bar);
+    color: var(--text-color);
+}
+/* ebd footer */
